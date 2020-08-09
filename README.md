@@ -31,8 +31,8 @@ Unlike a traditional ASP.NET Core Application where we can configure the host at
     - Microsoft.Extensions.Http (This will add Resiliance to our HttpClient so we don't run into Socket Exhaustion)
 2. **Create a Startup Class which inherits from FunctionsStartup**
    - Make sure to have the following attribute above your startup class namespace or none of the service will be added to IoC Container : 
-```
-[assembly: FunctionsStartup(typeof(YourNamespace.Startup))]
+```csharp
+[assembly: FunctionsStartup(typeof(YourNameSpace.Startup))]
 namespace YourNameSpace
 {
     public class Startup
