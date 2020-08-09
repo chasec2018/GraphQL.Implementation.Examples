@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AzureFunction.HotChocolate.Middleware
 {
-    public class HotChocolateGraphMiddlewareOptions : IHotChocolateGraphMiddlewareOptions
+    public class GraphHttpRequestHandlerOptions : IGraphHttpRequestHandlerOptions
     {
         private int minRequestSize = 1024;
         private int maxRequestSize = 20 * 1024 * 1024;

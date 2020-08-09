@@ -50,7 +50,7 @@ namespace AzureFunction.HotChocolate
                     });
 
             // Add the Execution Middleware
-            Builder.Services.AddGraphQLExeutionMiddleware();
+            Builder.Services.AddGraphQueryExeutionMiddleware();
         }
     }
 }

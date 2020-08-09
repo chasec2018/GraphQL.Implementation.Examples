@@ -1,22 +1,16 @@
-﻿
-using System;
-using System.Text;
+﻿using HotChocolate.Language;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using HotChocolate.Language;
 using HotChocolate.Execution;
-using System.Collections.Generic;
 
 namespace AzureFunction.HotChocolate.Middleware
 {
-    public interface IHotChocolateGraphHttpRequestHandler
+    public interface IGraphHttpRequestHandler
     {
-        IHotChocolateGraphMiddlewareOptions GraphFunctionOptions { get; }
-        IDocumentCache DocumentCache { get; }
-        IDocumentHashProvider DocumentHashProvider { get; }
-        IQueryExecutor Executor { get; }
+        JsonQueryResultSerializer ResultSerializer { get; set; }
         IReadOnlyList<GraphQLRequest> GraphQueryRequests { get; set; }
         Task<IActionResult> ExecuteFunctionsQueryAsync(HttpContext Context, CancellationToken StopingToken);
     }

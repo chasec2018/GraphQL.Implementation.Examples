@@ -7,8 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunction.HotChocolate"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2776E767-F40F-4FE6-A587-86EA6C9D9236}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspDotNet.HotChocolate", "AspDotNet.HotChocolate\AspDotNet.HotChocolate.csproj", "{29842D69-26A1-4F48-B5B9-83A1CFFCFE59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29842D69-26A1-4F48-B5B9-83A1CFFCFE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29842D69-26A1-4F48-B5B9-83A1CFFCFE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29842D69-26A1-4F48-B5B9-83A1CFFCFE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29842D69-26A1-4F48-B5B9-83A1CFFCFE59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
