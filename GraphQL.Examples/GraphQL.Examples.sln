@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunction.HotChocolate", "AzureFunction.HotChocolate\AzureFunction.HotChocolate.csproj", "{63767A6A-0DFC-4276-B1D6-41563B7702A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2776E767-F40F-4FE6-A587-86EA6C9D9236}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63767A6A-0DFC-4276-B1D6-41563B7702A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9BCE472-8255-4ED0-95BA-B11199C66E93}
+	EndGlobalSection
+EndGlobal
