@@ -1,22 +1,22 @@
 using System;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using AzureFunction.HotChocolate.Middleware;
-using System.Threading;
+
 
 namespace AzureFunction.HotChocolate
 {
+    using Middleware;
+
     public class Main
     {
-        private readonly IHotChocolateGraphHttpRequestHandler RequestHandler;
+        private readonly IGraphHttpRequestHandler RequestHandler;
 
-        public Main(IHotChocolateGraphHttpRequestHandler requestHandler)
+        public Main(IGraphHttpRequestHandler requestHandler)
         {
             RequestHandler = requestHandler;
         }
