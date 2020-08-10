@@ -17,7 +17,8 @@ It's recommended that you read the following documentation and have a strong und
 #### Data
 The data being consumed is comming from the following sources
 - BEA.gov APIs (and Open Source and free APIs) will need
-### I. ++Azure Function Implementation [In-Progress]++
+
+### I. Azure Function Implementation [In-Progress]
 Unlike a traditional ASP.NET Core Application where we can configure the host at Startup and tell the application which endpoints to use, we need to build a sort of Middleware that can handle the execution of incoming request within the Http Pipline. The current example deomstraits how to implement a custom middleware for executing queries that are processed from the Http Pipline by parsing the request stream. 
 ![Implementation Mockup](https://github.com/chasec2018/GraphQL.Implementation.Examples/blob/features/initial_start/Assets/uml-query-middleware-diagram.png)
 #### Deliverables
@@ -223,7 +224,7 @@ Unlike a traditional ASP.NET Core Application where we can configure the host at
 
 3. **Inject & Implement IHttpRequestHandler into Function Endpoint**
 
-     ```csharp 
+```csharp 
      public class Main
      {
             private readonly IGraphHttpRequestHandler RequestHandler;
@@ -243,4 +244,4 @@ Unlike a traditional ASP.NET Core Application where we can configure the host at
  ```
 
 
-### II. ++ASP.NET Core Web App Implementation [Not Finished]++
+### II. ASP.NET Core Web App Implementation [Not Finished]
