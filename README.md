@@ -29,18 +29,5 @@ Unlike a traditional ASP.NET Core Application where we can configure the host at
     - HotChocolate.Utilities
     - Microsoft.Azure.Functions.Extensions (This will allow us to enable dependency injection)
     - Microsoft.Extensions.Http (This will add Resiliance to our HttpClient so we don't run into Socket Exhaustion)
-2. **Create a Startup Class which inherits from FunctionsStartup**
-   - Make sure to have the following attribute above your startup class namespace or none of the service will be added to IoC Container : 
-```csharp
-[assembly: FunctionsStartup(typeof(YourNameSpace.Startup))]
-namespace YourNameSpace
-{
-    public class Startup
-    {
-        
-    }
-}
-```
-2. ****
 
 ### II. ASP.NET Core Web App Implementation [Not Finished]
