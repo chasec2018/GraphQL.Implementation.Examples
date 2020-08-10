@@ -1,7 +1,6 @@
-﻿using HotChocolate.Language;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Text;
+using HotChocolate.Language;
 
 namespace AzureFunction.HotChocolate.Middleware
 {
@@ -9,9 +8,7 @@ namespace AzureFunction.HotChocolate.Middleware
     {
         private int minRequestSize = 1024;
         private int maxRequestSize = 20 * 1024 * 1024;
-
-        public ParserOptions parserOptions = new ParserOptions();
-
+        private ParserOptions parserOptions = new ParserOptions();
 
 
         public ParserOptions ParserOptions
